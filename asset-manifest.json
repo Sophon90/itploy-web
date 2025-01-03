@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/itploy-web/static/css/main.e6c13ad2.css",
+    "main.js": "/itploy-web/static/js/main.7d55c263.js",
+    "static/js/488.6d6d294d.chunk.js": "/itploy-web/static/js/488.6d6d294d.chunk.js",
+    "index.html": "/itploy-web/index.html",
+    "main.e6c13ad2.css.map": "/itploy-web/static/css/main.e6c13ad2.css.map",
+    "main.7d55c263.js.map": "/itploy-web/static/js/main.7d55c263.js.map",
+    "488.6d6d294d.chunk.js.map": "/itploy-web/static/js/488.6d6d294d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.7d55c263.js"
+  ]
+}
