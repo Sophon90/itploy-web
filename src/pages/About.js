@@ -34,41 +34,44 @@ const About = () => {
 
 const styles = {
   container: {
-    padding: '3rem',
-    maxWidth: '800px',
-    margin: '0 auto',
+    padding: '3rem', // เพิ่มระยะห่างรอบๆ กรอบ
+    width: '100%', // กำหนดให้กรอบกว้างเต็มที่
+    maxWidth: '1200px', // ขยายกรอบให้กว้างขึ้นเป็น 1200px เมื่อหน้าจอใหญ่
+    margin: '0 auto', // จัดให้อยู่กลางหน้า
     backgroundColor: '#f9f9f9',
     borderRadius: '15px',
-    boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)',
-    fontFamily: "'Prompt', sans-serif", // Thai font family
+    boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1)',
+    fontFamily: "'Prompt', sans-serif",
     lineHeight: '1.8',
+    border: '1px solid #ddd',
   },
   heading: {
-    fontSize: '2.5rem',
-    fontWeight: 'bold',
+    fontSize: '3rem',
+    fontWeight: '700',
     color: '#34495e',
     textAlign: 'center',
-    marginBottom: '2rem',
-    borderBottom: '3px solid #3498db',
+    marginBottom: '3rem',
+    borderBottom: '4px solid #3498db',
     display: 'inline-block',
-    paddingBottom: '0.5rem',
+    paddingBottom: '0.8rem',
   },
   section: {
-    marginBottom: '2rem',
+    marginBottom: '3rem', // เพิ่มระยะห่างระหว่าง section
   },
   subheading: {
-    fontSize: '1.8rem',
+    fontSize: '2rem',
     fontWeight: '600',
     color: '#3498db',
-    marginBottom: '1rem',
+    marginBottom: '1.5rem', // เพิ่มระยะห่างจากข้อความ
     textAlign: 'center',
   },
   text: {
-    fontSize: '1.2rem',
+    fontSize: '1.3rem',
     color: '#555',
     textAlign: 'justify',
     lineHeight: '1.8',
-    padding: '0 1rem',
+    padding: '0 2rem', // เพิ่มระยะห่างด้านข้าง
+    marginBottom: '1.5rem', // เพิ่มระยะห่างระหว่างย่อหน้า
   },
 };
 

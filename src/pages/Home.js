@@ -3,34 +3,33 @@ import React from 'react';
 const Home = () => {
   return (
     <div style={styles.container}>
-      <div style={styles.textContainer}>
-        <h2 style={styles.heading}>ยินดีต้อนรับ</h2>
-        <p style={styles.subheading}>สู่สาขาเทคโนโลยีสารสนเทศ</p>
-        <p style={styles.paragraph}>
-          สาขาของเรามุ่งเน้นพัฒนาความรู้และทักษะด้านเทคโนโลยีสารสนเทศเพื่อก้าวทันโลกยุคดิจิทัล
-        </p>
-
-        {/* Additional introduction text */}
-        <p style={styles.introText}>
-          เรามีหลักสูตรที่ครอบคลุมทุกด้านของเทคโนโลยีสารสนเทศ รวมถึงการพัฒนาซอฟต์แวร์, การจัดการฐานข้อมูล, และการรักษาความปลอดภัยทางไซเบอร์
-        </p>
-
-        {/* Philosophy Section */}
-        <div style={styles.philosophyContainer}>
-          <h3 style={styles.philosophyHeading}>ปรัชญาของสาขา</h3>
-          <p style={styles.philosophyText}>
-            "สร้างสรรค์ความรู้ สู่การพัฒนาเทคโนโลยีเพื่ออนาคต"
+      <div style={styles.card}>
+        <div style={styles.textContainer}>
+          <h2 style={styles.heading}>ยินดีต้อนรับ</h2>
+          <p style={styles.subheading}>สู่สาขาเทคโนโลยีสารสนเทศ</p>
+          <p style={styles.paragraph}>
+            สาขาของเรามุ่งเน้นพัฒนาความรู้และทักษะด้านเทคโนโลยีสารสนเทศเพื่อก้าวทันโลกยุคดิจิทัล
           </p>
-        </div>
-      </div>
 
-      {/* Image on the right */}
-      <div style={styles.imageContainer}>
-        <img
-          src="https://www.lannapoly.ac.th/web/assets/img-it-UTNwL-IP.jpeg"
-          alt="Technology Branch"
-          style={styles.image}
-        />
+          <p style={styles.introText}>
+            เรามีหลักสูตรที่ครอบคลุมทุกด้านของเทคโนโลยีสารสนเทศ รวมถึงการพัฒนาซอฟต์แวร์, การจัดการฐานข้อมูล, และการรักษาความปลอดภัยทางไซเบอร์
+          </p>
+
+          <div style={styles.philosophyContainer}>
+            <h3 style={styles.philosophyHeading}>ปรัชญาของสาขา</h3>
+            <p style={styles.philosophyText}>
+              "สร้างสรรค์ความรู้ สู่การพัฒนาเทคโนโลยีเพื่ออนาคต"
+            </p>
+          </div>
+        </div>
+
+        <div style={styles.imageContainer}>
+          <img
+            src="https://www.lannapoly.ac.th/web/assets/img-it-UTNwL-IP.jpeg"
+            alt="Technology Branch"
+            style={styles.image}
+          />
+        </div>
       </div>
     </div>
   );
@@ -39,68 +38,82 @@ const Home = () => {
 const styles = {
   container: {
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center', // Align items vertically at the center
+    justifyContent: 'center',
     padding: '2rem',
-    flexWrap: 'nowrap', // Prevent wrapping
+    backgroundColor: '#f0f4f8',
+  },
+  card: {
+    display: 'flex',
+    flexDirection: 'row',
+    border: '2px solid #d1d5db',
+    borderRadius: '12px',
+    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)',
+    backgroundColor: '#ffffff',
+    padding: '2rem',
+    maxWidth: '1200px',
+    width: '100%',
   },
   textContainer: {
     flex: 1,
-    textAlign: 'left',
-    paddingRight: '2rem', // Adds spacing between text and image
-    marginTop: '-2rem', // Move text container up
+    paddingRight: '2rem',
   },
   heading: {
-    fontSize: '2rem',
+    fontSize: '2.8rem',
     fontWeight: 'bold',
     color: '#2c3e50',
-    marginBottom: '0.5rem',
+    marginBottom: '1rem',
+    borderBottom: '3px solid #3498db',
+    paddingBottom: '0.5rem',
   },
   subheading: {
-    fontSize: '1.5rem',
-    fontWeight: '500',
+    fontSize: '1.8rem',
+    fontWeight: '600',
     color: '#3498db',
     marginBottom: '1rem',
   },
   paragraph: {
-    fontSize: '1.2rem',
+    fontSize: '1.4rem',
     color: '#555',
-    lineHeight: '1.6',
-    marginBottom: '1.5rem', // Adds space between paragraphs
+    lineHeight: '1.8',
+    marginBottom: '1.5rem',
   },
   introText: {
-    fontSize: '1.2rem',
+    fontSize: '1.4rem',
     color: '#555',
-    lineHeight: '1.6',
+    lineHeight: '1.8',
     marginTop: '1rem',
   },
   philosophyContainer: {
-    marginTop: '2rem', // Space above philosophy section
-    padding: '1rem',
-    backgroundColor: '#f9f9f9', // Light background to highlight philosophy
+    marginTop: '2rem',
+    padding: '1.5rem',
+    backgroundColor: '#f9f9f9',
     borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Slight shadow for emphasis
+    border: '1px solid #e0e0e0',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.05)',
   },
   philosophyHeading: {
-    fontSize: '1.5rem',
+    fontSize: '1.6rem',
     fontWeight: 'bold',
     color: '#2c3e50',
-    marginBottom: '0.5rem',
+    marginBottom: '0.8rem',
   },
   philosophyText: {
-    fontSize: '1.2rem',
+    fontSize: '1.4rem',
     color: '#555',
-    lineHeight: '1.6',
+    lineHeight: '1.8',
   },
   imageContainer: {
     flex: 1,
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   image: {
-    maxWidth: '100%',
+    maxWidth: '90%',
     height: 'auto',
-    borderRadius: '10px', // Optional: adds rounded corners to the image
+    borderRadius: '12px',
+    border: '1px solid #ddd',
+    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)',
   },
 };
 
